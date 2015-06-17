@@ -3,7 +3,7 @@
 <!-- Generated using X-Studio -->
 <script>
 	<name>plugin.GNS.Add.Article</name>
-	<version>120</version>
+	<version>121</version>
 	<engineversion>50</engineversion>
 	<description>Adds Dynamic News articles to the system</description>
 	<arguments>
@@ -37,7 +37,7 @@
 			<text>'GNS.PageID.Array'</text>
 		</line>
 		<line linenr="003" indent="">
-			<var>$GNS.Page.ID</var>
+			<var>$GNS.PageID</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
@@ -1271,7 +1271,7 @@
 			<text> </text>
 			<text>page</text>
 			<text>=</text>
-			<var>$GNS.Page.ID</var>
+			<var>$GNS.PageID</var>
 			<text> </text>
 			<text>id</text>
 			<text>=</text>
@@ -1380,7 +1380,7 @@
 			<sval type="string" val="plugin.GNS.Add.Article" />
 			<sval type="int" val="50" />
 			<sval type="string" val="Adds Dynamic News articles to the system" />
-			<sval type="int" val="120" />
+			<sval type="int" val="121" />
 			<sval type="int" val="0" />
 			<sval type="array" size="27">
 				<sval type="string" val="Article.ID" />
@@ -1394,7 +1394,7 @@
 				<sval type="string" val="Button.Headline" />
 				<sval type="string" val="Button.Text" />
 				<sval type="string" val="PageID.Array" />
-				<sval type="string" val="GNS.Page.ID" />
+				<sval type="string" val="GNS.PageID" />
 				<sval type="string" val="Game.Time" />
 				<sval type="string" val="DynamicNews" />
 				<sval type="string" val="Size" />

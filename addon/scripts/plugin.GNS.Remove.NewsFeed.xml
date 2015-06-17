@@ -3,7 +3,7 @@
 <!-- Generated using X-Studio -->
 <script>
 	<name>plugin.GNS.Remove.NewsFeed</name>
-	<version>114</version>
+	<version>115</version>
 	<engineversion>50</engineversion>
 	<description>Remove custom newsfeed (text id) from static news items</description>
 	<arguments>
@@ -39,7 +39,7 @@
 			<text> </text>
 			<text>of</text>
 			<text> </text>
-			<var>$page.id</var>
+			<var>$PageID</var>
 			<text> </text>
 			<text>in</text>
 			<text> </text>
@@ -96,7 +96,7 @@
 		<line linenr="008" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
-			<var>null</var>
+			<var>[NULL]</var>
 			<text>-&gt;</text>
 			<text> </text>
 			<text>call</text>
@@ -122,13 +122,12 @@
 			<sval type="string" val="plugin.GNS.Remove.NewsFeed" />
 			<sval type="int" val="50" />
 			<sval type="string" val="Remove custom newsfeed (text id) from static news items" />
-			<sval type="int" val="114" />
+			<sval type="int" val="115" />
 			<sval type="int" val="0" />
-			<sval type="array" size="4">
+			<sval type="array" size="3">
 				<sval type="string" val="PageID" />
 				<sval type="string" val="PageID.Array" />
 				<sval type="string" val="Index" />
-				<sval type="string" val="page.id" />
 			</sval>
 			<sval type="array" size="7">
 				<sval type="array" size="4">
@@ -143,7 +142,7 @@
 					<sval type="int" val="131074" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="3" />
+					<sval type="int" val="0" />
 					<sval type="int" val="4" />
 					<sval type="int" val="-1" />
 				</sval>
@@ -180,8 +179,8 @@
 					<sval type="int" val="102" />
 					<sval type="string" val="plugin.GNS.Setup.Newspapers" />
 					<sval type="int" val="-2147483647" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="12" />
 					<sval type="int" val="0" />
 				</sval>
 				<sval type="array" size="3">

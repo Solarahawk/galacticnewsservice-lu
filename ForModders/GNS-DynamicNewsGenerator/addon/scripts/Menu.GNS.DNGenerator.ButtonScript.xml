@@ -3,7 +3,7 @@
 <!-- Generated using X-Studio -->
 <script>
 	<name>Menu.GNS.DNGenerator.ButtonScript</name>
-	<version>3</version>
+	<version>5</version>
 	<engineversion>50</engineversion>
 	<description>GNS DN Generator : basic Ok dialog window</description>
 	<arguments />
@@ -44,23 +44,8 @@
 			<text>'GNS.DNGenerator.PageID'</text>
 		</line>
 		<line linenr="009" indent="" />
-		<line linenr="010" indent="" />
-		<line linenr="011" indent="">
-			<var>$pilot.name</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<var>[PLAYERSHIP]</var>
-			<text>-&gt;</text>
-			<text> </text>
-			<text>get</text>
-			<text> </text>
-			<text>name</text>
-		</line>
-		<line linenr="012" indent="" />
-		<line linenr="013" indent="" />
-		<line linenr="014" indent="">
-			<var>$menu</var>
+		<line linenr="010" indent="">
+			<var>$Menu</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
@@ -72,8 +57,7 @@
 			<text> </text>
 			<text>array</text>
 		</line>
-		<line linenr="015" indent="" />
-		<line linenr="016" indent="">
+		<line linenr="011" indent="">
 			<text>add</text>
 			<text> </text>
 			<text>custom</text>
@@ -86,14 +70,14 @@
 			<text> </text>
 			<text>array</text>
 			<text> </text>
-			<var>$menu</var>
+			<var>$Menu</var>
 			<text>:</text>
 			<text> </text>
 			<text>title</text>
 			<text>=</text>
 			<text>'Congratulations!'</text>
 		</line>
-		<line linenr="017" indent="">
+		<line linenr="012" indent="">
 			<text>add</text>
 			<text> </text>
 			<text>custom</text>
@@ -106,7 +90,7 @@
 			<text> </text>
 			<text>array</text>
 			<text> </text>
-			<var>$menu</var>
+			<var>$Menu</var>
 			<text>:</text>
 			<text> </text>
 			<text>text</text>
@@ -117,8 +101,8 @@
 			<text>=</text>
 			<var>-1</var>
 		</line>
-		<line linenr="018" indent="" />
-		<line linenr="019" indent="">
+		<line linenr="013" indent="" />
+		<line linenr="014" indent="">
 			<text>add</text>
 			<text> </text>
 			<text>custom</text>
@@ -133,16 +117,16 @@
 			<text> </text>
 			<text>array</text>
 			<text> </text>
-			<var>$menu</var>
+			<var>$Menu</var>
 			<text>:</text>
 			<text> </text>
 			<text>text</text>
 			<text>=</text>
 			<text>'You pressed the button! Fortunately nothing catastrophic happened. Consider this a successful outcome.'</text>
 		</line>
-		<line linenr="020" indent="" />
-		<line linenr="021" indent="">
-			<var>$menu.result</var>
+		<line linenr="015" indent="" />
+		<line linenr="016" indent="">
+			<var>$Result</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
@@ -165,13 +149,13 @@
 			<text> </text>
 			<text>array</text>
 			<text>=</text>
-			<var>$menu</var>
+			<var>$Menu</var>
 		</line>
-		<line linenr="022" indent="" />
-		<line linenr="023" indent="">
+		<line linenr="017" indent="" />
+		<line linenr="018" indent="">
 			<text>return</text>
 			<text> </text>
-			<var>$menu.result</var>
+			<var>$Result</var>
 		</line>
 	</sourcetext>
 	<codearray>
@@ -179,42 +163,35 @@
 			<sval type="string" val="Menu.GNS.DNGenerator.ButtonScript" />
 			<sval type="int" val="50" />
 			<sval type="string" val="GNS DN Generator : basic Ok dialog window" />
-			<sval type="int" val="3" />
+			<sval type="int" val="5" />
 			<sval type="int" val="0" />
-			<sval type="array" size="4">
+			<sval type="array" size="3">
 				<sval type="string" val="PageID" />
-				<sval type="string" val="pilot.name" />
-				<sval type="string" val="menu" />
-				<sval type="string" val="menu.result" />
+				<sval type="string" val="Menu" />
+				<sval type="string" val="Result" />
 			</sval>
-			<sval type="array" size="8">
+			<sval type="array" size="7">
 				<sval type="array" size="4">
 					<sval type="int" val="158" />
 					<sval type="int" val="5" />
 					<sval type="string" val="GNS.DNGenerator.PageID" />
 					<sval type="int" val="0" />
 				</sval>
-				<sval type="array" size="4">
-					<sval type="int" val="1028" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="3" />
-					<sval type="int" val="1" />
-				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1445" />
-					<sval type="int" val="2" />
+					<sval type="int" val="1" />
 				</sval>
 				<sval type="array" size="5">
 					<sval type="int" val="1448" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="2" />
+					<sval type="int" val="1" />
 					<sval type="int" val="5" />
 					<sval type="string" val="Congratulations!" />
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="1447" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="2" />
+					<sval type="int" val="1" />
 					<sval type="int" val="5" />
 					<sval type="string" val="Go Away" />
 					<sval type="int" val="4" />
@@ -223,28 +200,28 @@
 				<sval type="array" size="5">
 					<sval type="int" val="1446" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="2" />
+					<sval type="int" val="1" />
 					<sval type="int" val="5" />
 					<sval type="string" val="You pressed the button! Fortunately nothing catastrophic happened. Consider this a successful outcome." />
 				</sval>
 				<sval type="array" size="8">
 					<sval type="int" val="1230" />
-					<sval type="int" val="3" />
+					<sval type="int" val="2" />
 					<sval type="int" val="5" />
 					<sval type="string" val="The Button Was Pressed" />
 					<sval type="int" val="0" />
 					<sval type="int" val="0" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="2" />
+					<sval type="int" val="1" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="103" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="3" />
+					<sval type="int" val="2" />
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
-			<sval type="array" size="15">
+			<sval type="array" size="11">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -284,19 +261,7 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="1" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="2" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="2" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="3" />
+					<sval type="int" val="4" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
@@ -305,10 +270,6 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="6" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="7" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>

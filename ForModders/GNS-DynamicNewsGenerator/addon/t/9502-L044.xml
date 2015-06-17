@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Generated using X-Studio -->
+<language id="44">
+
+	<page id="9502" title="GNS - Dynamic News Generator" desc="" voice="no">
+		<t id="100">Galactic News Service - Dynamic News Generator</t>
+		<t id="101">GNS Dynamic News Generator: [\033Ybuild %s]\033X</t>
+		<t id="102">[author]Galactic News Service[/author] [b]Dynamic News Generator[/b] has been enabled</t>
+		<t id="103">[author]Galactic News Service[/author] [b]Dynamic News Generator[/b] has been disabled</t>
+		<t id="104">100</t>
+		<t id="105">0</t>
+		<t id="110">40</t>
+		<t id="111">20</t>
+		<t id="112">20</t>
+		<t id="113">40</t>
+		<t id="114">450</t>
+		<t id="115">Menu.GNS.DNGenerator.ButtonScript</t>
+		<t id="116">Action Button Headline</t>
+		<t id="117">Push Me</t>
+		<t id="200">Dynamic Article - Published %s</t>
+		<t id="201">This is a dynamic news article. It has been published %s. It will be displayed %s. %s\n\nDynamic News articles (but not titles!) can use placeholder variables to automatically swap in the requested text, making the article more personalized or appear even more dynamic (by entering random values, like random sectors, NPC names, etc.) \n\nUsing placeholder variables, the news service reports that your name is \033G$PLAYERNAME$\033X and you are currently flying a \033C$PLAYERSHIPCLASS$\033X \033Y$PLAYERSHIPTYPE$\033X. \n\nA random sector has been chosen: \033O$RANDOMSECTOR$\033X, and a random name for a Teladi pilot: \033M$RANDOMNAME.TELADI$\033X.</t>
+	</page>
+</language>
