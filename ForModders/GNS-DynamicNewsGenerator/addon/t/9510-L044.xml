@@ -2,7 +2,7 @@
 <!-- Generated using X-Studio -->
 <language id="44">
 
-	<page id="9502" title="GNS - Dynamic News Generator" desc="" voice="no">
+	<page id="9510" title="GNS - Dynamic News Generator" desc="" voice="no">
 		<t id="100">Galactic News Service - Dynamic News Generator</t>
 		<t id="101">GNS Dynamic News Generator: [\033Ybuild %s]\033X</t>
 		<t id="102">[author]Galactic News Service[/author] [b]Dynamic News Generator[/b] has been enabled</t>

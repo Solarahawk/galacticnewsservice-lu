@@ -3,7 +3,7 @@
 <!-- Generated using X-Studio -->
 <script>
 	<name>al.GNS.DNGenerator.Main</name>
-	<version>52</version>
+	<version>53</version>
 	<engineversion>50</engineversion>
 	<description>Pirate Guild - Main AL Plugin</description>
 	<arguments>
@@ -17,7 +17,7 @@
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>9502</var>
+			<var>9510</var>
 		</line>
 		<line linenr="003" indent="">
 			<var>$Plugin.Vars</var>
@@ -1173,7 +1173,7 @@
 			<sval type="string" val="al.GNS.DNGenerator.Main" />
 			<sval type="int" val="50" />
 			<sval type="string" val="Pirate Guild - Main AL Plugin" />
-			<sval type="int" val="52" />
+			<sval type="int" val="53" />
 			<sval type="int" val="0" />
 			<sval type="array" size="17">
 				<sval type="string" val="Plugin.ID" />
@@ -1200,7 +1200,7 @@
 					<sval type="int" val="2" />
 					<sval type="int" val="1" />
 					<sval type="int" val="4" />
-					<sval type="int" val="9502" />
+					<sval type="int" val="9510" />
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>

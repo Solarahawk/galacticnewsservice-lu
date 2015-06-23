@@ -2,7 +2,7 @@
 <!-- Generated using X-Studio -->
 <language id="44">
 
-	<page id="9500" title="Newspaper Articles" desc="" voice="no">
+	<page id="9500" title="News Articles" desc="" voice="no">
 		<t id="1">Available Articles</t>
 		<t id="2">Disconnect</t>
 		<t id="3">Connect to Galactic News Service</t>
@@ -1269,7 +1269,7 @@
 		<t id="4142">It is only now emerging that Goner Intelligence was involved in the recent interception of mercenary terrorists planning to attack the Argon Trading Port in Home of Light. The mercenaries, who had all knowledge of their employers chemically wiped out, were to use a matter transporter to deliver a primed Hornet class missile into the main concourse of the station. If such a weapon were to detonate in an unshielded area of that kind it would tear the facility apart.\n\nGoner Intelligence have long monitored the whereabouts of matter transmission devices and became concerned some months ago, when a transmat-equipped Teladi vessel was reported lost to a pirate attack. It now appears that agents of Goner Intelligence were successfully able to trace the device and pass on the information to Argon authorities.\n\nWhile the mercenaries have no memory of their employers, they were able to name a numbered account at the Teladi Profit Guild Bank in Company Pride. Argon agents found the account to be empty after obtaining a warrant from Guild authorities. The Teladi factor in the affair has been noted but seems nothing more than circumstantial at this time. No motives for such a vicious attack on a trading station other than to create sheer terror has been discovered.\n\nBal Mulligan - Security Correspondent, GCN News</t>
 	</page>
 
-	<page id="9501" title="Newspapers" desc="" voice="no">
+	<page id="9501" title="News Networks" desc="" voice="no">
 		<t id="1">7</t>
 		<t id="100">Argon</t>
 		<t id="101">Interstellar Broadcasting Corporation</t>
@@ -1357,5 +1357,49 @@
 		<t id="711">science</t>
 		<t id="712">galnet</t>
 		<t id="713">politics</t>
+	</page>
+
+	<page id="9502" title="Contracts Networks" desc="" voice="no">
+		<t id="1">6</t>
+		<t id="100">Argon</t>
+		<t id="101">Interstellar Contracting Corporation</t>
+		<t id="102">Welcome to the Service Contracts Network</t>
+		<t id="200">Boron</t>
+		<t id="201">Royal Service Agreements</t>
+		<t id="202">Welcome to the Service Contracts Network</t>
+		<t id="300">Split</t>
+		<t id="301">Split Family Services</t>
+		<t id="302">Welcome to the Service Contracts Network</t>
+		<t id="400">Paranid</t>
+		<t id="401">Imperial Holy Contracts</t>
+		<t id="402">Welcome to the Service Contracts Network</t>
+		<t id="500">Teladi</t>
+		<t id="501">Economic Service Contracts</t>
+		<t id="502">Welcome to the Service Contracts Network</t>
+		<t id="600">Terran</t>
+		<t id="601">Terra United Service Contracts</t>
+		<t id="602">Welcome to the Service Contracts Network</t>
+	</page>
+
+	<page id="9503" title="Commerce Networks" desc="" voice="no">
+		<t id="1">6</t>
+		<t id="100">Argon</t>
+		<t id="101">Interstellar Broadcasting Corporation</t>
+		<t id="102">Welcome to the Commerce and Finance Network</t>
+		<t id="200">Boron</t>
+		<t id="201">Royal Commonwealth News</t>
+		<t id="202">Welcome to the Commerce and Finance Network</t>
+		<t id="300">Split</t>
+		<t id="301">Split Family News</t>
+		<t id="302">Welcome to the Commerce and Finance Network</t>
+		<t id="400">Paranid</t>
+		<t id="401">Imperial Paranid News</t>
+		<t id="402">Welcome to the Commerce and Finance Network</t>
+		<t id="500">Teladi</t>
+		<t id="501">Central Business News Net</t>
+		<t id="502">Welcome to the Commerce and Finance Network</t>
+		<t id="600">Terran</t>
+		<t id="601">Terra United News Network</t>
+		<t id="602">Welcome to the Commerce and Finance Network</t>
 	</page>
 </language>

@@ -3,13 +3,30 @@
 <!-- Generated using X-Studio -->
 <script>
 	<name>plugin.GNS.Uninstall</name>
-	<version>112</version>
+	<version>115</version>
 	<engineversion>50</engineversion>
 	<description>Uninstall the GNS plugin</description>
 	<arguments />
 	<sourcetext>
-		<line linenr="001" indent="" />
+		<line linenr="001" indent="">
+			<comment>* ************************************************</comment>
+		</line>
 		<line linenr="002" indent="">
+			<comment>* SCRIPT NAME: plugin.GNS.Uninstall.xml</comment>
+		</line>
+		<line linenr="003" indent="">
+			<comment>* </comment>
+		</line>
+		<line linenr="004" indent="">
+			<comment>* DESCRIPTION: Unregister GNS hotkey and clear all global vars.</comment>
+		</line>
+		<line linenr="005" indent="">
+			<comment>* </comment>
+		</line>
+		<line linenr="006" indent="">
+			<comment>* ************************************************</comment>
+		</line>
+		<line linenr="007" indent="">
 			<var>$Hotkey</var>
 			<text> </text>
 			<text>=</text>
@@ -25,15 +42,15 @@
 			<text>=</text>
 			<text>'GNS.Hotkey'</text>
 		</line>
-		<line linenr="003" indent="">
+		<line linenr="008" indent="">
 			<text>unregister</text>
 			<text> </text>
 			<text>hotkey</text>
 			<text> </text>
 			<var>$Hotkey</var>
 		</line>
-		<line linenr="004" indent="" />
-		<line linenr="005" indent="">
+		<line linenr="009" indent="" />
+		<line linenr="010" indent="">
 			<var>$Global.Vars</var>
 			<text> </text>
 			<text>=</text>
@@ -55,7 +72,7 @@
 			<text>=</text>
 			<text>'GNS'</text>
 		</line>
-		<line linenr="006" indent="">
+		<line linenr="011" indent="">
 			<var>$XS.Iterator1</var>
 			<text> </text>
 			<text>=</text>
@@ -68,17 +85,17 @@
 			<text> </text>
 			<var>$Global.Vars</var>
 		</line>
-		<line linenr="007" indent="&#160;">
+		<line linenr="012" indent="&#160;">
 			<text>while</text>
 			<text> </text>
 			<var>$XS.Iterator1</var>
 		</line>
-		<line linenr="008" indent="">
+		<line linenr="013" indent="">
 			<text>dec</text>
 			<text> </text>
 			<var>$XS.Iterator1</var>
 		</line>
-		<line linenr="009" indent="">
+		<line linenr="014" indent="">
 			<var>$Var</var>
 			<text> </text>
 			<text>=</text>
@@ -88,7 +105,7 @@
 			<var>$XS.Iterator1</var>
 			<text>]</text>
 		</line>
-		<line linenr="010" indent="">
+		<line linenr="015" indent="">
 			<text>set</text>
 			<text> </text>
 			<text>global</text>
@@ -104,11 +121,11 @@
 			<text>=</text>
 			<var>null</var>
 		</line>
-		<line linenr="011" indent="">
+		<line linenr="016" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="012" indent="" />
-		<line linenr="013" indent="">
+		<line linenr="017" indent="" />
+		<line linenr="018" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
@@ -119,7 +136,7 @@
 			<sval type="string" val="plugin.GNS.Uninstall" />
 			<sval type="int" val="50" />
 			<sval type="string" val="Uninstall the GNS plugin" />
-			<sval type="int" val="112" />
+			<sval type="int" val="115" />
 			<sval type="int" val="0" />
 			<sval type="array" size="4">
 				<sval type="string" val="Hotkey" />
@@ -190,10 +207,36 @@
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
-			<sval type="array" size="4">
-				<sval type="array" size="2">
+			<sval type="array" size="9">
+				<sval type="array" size="3">
 					<sval type="int" val="0" />
-					<sval type="int" val="2" />
+					<sval type="int" val="1" />
+					<sval type="string" val="************************************************" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="SCRIPT NAME: plugin.GNS.Uninstall.xml" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="DESCRIPTION: Unregister GNS hotkey and clear all global vars." />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="************************************************" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="2" />

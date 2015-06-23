@@ -3,13 +3,27 @@
 <!-- Generated using X-Studio -->
 <script>
 	<name>plugin.GNS.GetID</name>
-	<version>115</version>
+	<version>117</version>
 	<engineversion>50</engineversion>
 	<description>Returns unique id for news system</description>
 	<arguments />
 	<sourcetext>
-		<line linenr="001" indent="" />
+		<line linenr="001" indent="">
+			<comment>*************************************************</comment>
+		</line>
 		<line linenr="002" indent="">
+			<comment>* SCRIPT NAME: plugin.GNS.GetID.xml</comment>
+		</line>
+		<line linenr="003" indent="">
+			<comment>* DESCRIPTION: Request unique, unused article ID.</comment>
+		</line>
+		<line linenr="004" indent="">
+			<comment>* </comment>
+		</line>
+		<line linenr="005" indent="">
+			<comment>*************************************************</comment>
+		</line>
+		<line linenr="006" indent="">
 			<var>$DynamicNews</var>
 			<text> </text>
 			<text>=</text>
@@ -25,8 +39,8 @@
 			<text>=</text>
 			<text>'GNS.DynamicNews'</text>
 		</line>
-		<line linenr="003" indent="" />
-		<line linenr="004" indent="">
+		<line linenr="007" indent="" />
+		<line linenr="008" indent="">
 			<var>$ID.Array</var>
 			<text> </text>
 			<text>=</text>
@@ -40,7 +54,7 @@
 			<text>=</text>
 			<var>0</var>
 		</line>
-		<line linenr="005" indent="">
+		<line linenr="009" indent="">
 			<var>$Size</var>
 			<text> </text>
 			<text>=</text>
@@ -53,17 +67,17 @@
 			<text> </text>
 			<var>$DynamicNews</var>
 		</line>
-		<line linenr="006" indent="">
+		<line linenr="010" indent="">
 			<text>while</text>
 			<text> </text>
 			<var>$Size</var>
 		</line>
-		<line linenr="007" indent="&#160;">
+		<line linenr="011" indent="&#160;">
 			<text>dec</text>
 			<text> </text>
 			<var>$Size</var>
 		</line>
-		<line linenr="008" indent="&#160;">
+		<line linenr="012" indent="&#160;">
 			<var>$ID</var>
 			<text> </text>
 			<text>=</text>
@@ -76,7 +90,7 @@
 			<var>0</var>
 			<text>]</text>
 		</line>
-		<line linenr="009" indent="&#160;">
+		<line linenr="013" indent="&#160;">
 			<text>append</text>
 			<text> </text>
 			<var>$ID</var>
@@ -87,28 +101,28 @@
 			<text> </text>
 			<var>$ID.Array</var>
 		</line>
-		<line linenr="010" indent="">
+		<line linenr="014" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="011" indent="" />
-		<line linenr="012" indent="">
+		<line linenr="015" indent="" />
+		<line linenr="016" indent="">
 			<var>$Size</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>2147483647</var>
 		</line>
-		<line linenr="013" indent="">
+		<line linenr="017" indent="">
 			<text>while</text>
 			<text> </text>
 			<var>$Size</var>
 		</line>
-		<line linenr="014" indent="&#160;">
+		<line linenr="018" indent="&#160;">
 			<text>dec</text>
 			<text> </text>
 			<var>$Size</var>
 		</line>
-		<line linenr="015" indent="&#160;">
+		<line linenr="019" indent="&#160;">
 			<var>$ID</var>
 			<text> </text>
 			<text>=</text>
@@ -135,7 +149,7 @@
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="016" indent="&#160;">
+		<line linenr="020" indent="&#160;">
 			<text>skip</text>
 			<text> </text>
 			<text>if</text>
@@ -151,14 +165,14 @@
 			<text> </text>
 			<var>$ID.Array</var>
 		</line>
-		<line linenr="017" indent="&#160;&#160;">
+		<line linenr="021" indent="&#160;&#160;">
 			<text>break</text>
 		</line>
-		<line linenr="018" indent="">
+		<line linenr="022" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="019" indent="" />
-		<line linenr="020" indent="">
+		<line linenr="023" indent="" />
+		<line linenr="024" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>$ID</var>
@@ -169,7 +183,7 @@
 			<sval type="string" val="plugin.GNS.GetID" />
 			<sval type="int" val="50" />
 			<sval type="string" val="Returns unique id for news system" />
-			<sval type="int" val="115" />
+			<sval type="int" val="117" />
 			<sval type="int" val="0" />
 			<sval type="array" size="4">
 				<sval type="string" val="DynamicNews" />
@@ -291,10 +305,31 @@
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
-			<sval type="array" size="7">
-				<sval type="array" size="2">
+			<sval type="array" size="11">
+				<sval type="array" size="3">
 					<sval type="int" val="0" />
-					<sval type="int" val="2" />
+					<sval type="int" val="1" />
+					<sval type="string" val="************************************************" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="SCRIPT NAME: plugin.GNS.GetID.xml" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="DESCRIPTION: Request unique, unused article ID." />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="************************************************" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1" />

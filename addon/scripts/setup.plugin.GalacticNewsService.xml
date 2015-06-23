@@ -3,13 +3,43 @@
 <!-- Generated using X-Studio -->
 <script>
 	<name>setup.plugin.GalacticNewsService</name>
-	<version>121</version>
+	<version>128</version>
 	<engineversion>50</engineversion>
 	<description>Setup the Galactic News Service plugin</description>
 	<arguments />
 	<sourcetext>
-		<line linenr="001" indent="" />
+		<line linenr="001" indent="">
+			<comment>* ************************************************</comment>
+		</line>
 		<line linenr="002" indent="">
+			<comment>* SCRIPT NAME: setup.plugin.GalacticNewsService.xml</comment>
+		</line>
+		<line linenr="003" indent="">
+			<comment>* </comment>
+		</line>
+		<line linenr="004" indent="">
+			<comment>* DESCRIPTION: Configures the plugin on game load. The master PageID.Array</comment>
+		</line>
+		<line linenr="005" indent="">
+			<comment>*   is loaded and initialized if not already configured. PageID.Array</comment>
+		</line>
+		<line linenr="006" indent="">
+			<comment>*   stores the Text Pages of all static newsfeeds to be used by the </comment>
+		</line>
+		<line linenr="007" indent="">
+			<comment>*   general news service. By default, GNS itself provides a single newsfeed</comment>
+		</line>
+		<line linenr="008" indent="">
+			<comment>*   as well as its initial settings in PageID 9500.</comment>
+		</line>
+		<line linenr="009" indent="">
+			<comment>* </comment>
+		</line>
+		<line linenr="010" indent="">
+			<comment>* ************************************************</comment>
+		</line>
+		<line linenr="011" indent="" />
+		<line linenr="012" indent="">
 			<var>$PageID.Array</var>
 			<text> </text>
 			<text>=</text>
@@ -25,7 +55,7 @@
 			<text>=</text>
 			<text>'GNS.PageID.Array'</text>
 		</line>
-		<line linenr="003" indent="">
+		<line linenr="013" indent="">
 			<text>if</text>
 			<text> </text>
 			<text>not</text>
@@ -38,7 +68,7 @@
 			<text> </text>
 			<var>$PageID.Array</var>
 		</line>
-		<line linenr="004" indent="&#160;">
+		<line linenr="014" indent="&#160;">
 			<var>$PageID.Array</var>
 			<text> </text>
 			<text>=</text>
@@ -66,7 +96,7 @@
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="005" indent="&#160;">
+		<line linenr="015" indent="&#160;">
 			<text>set</text>
 			<text> </text>
 			<text>global</text>
@@ -82,11 +112,11 @@
 			<text>=</text>
 			<var>$PageID.Array</var>
 		</line>
-		<line linenr="006" indent="">
+		<line linenr="016" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="007" indent="" />
-		<line linenr="008" indent="">
+		<line linenr="017" indent="" />
+		<line linenr="018" indent="">
 			<var>$GNS.PageID</var>
 			<text> </text>
 			<text>=</text>
@@ -96,7 +126,7 @@
 			<var>0</var>
 			<text>]</text>
 		</line>
-		<line linenr="009" indent="">
+		<line linenr="019" indent="">
 			<text>load</text>
 			<text> </text>
 			<text>text</text>
@@ -106,8 +136,8 @@
 			<text>=</text>
 			<var>$GNS.PageID</var>
 		</line>
-		<line linenr="010" indent="" />
-		<line linenr="011" indent="">
+		<line linenr="020" indent="" />
+		<line linenr="021" indent="">
 			<var>$Hotkey</var>
 			<text> </text>
 			<text>=</text>
@@ -123,14 +153,14 @@
 			<text>=</text>
 			<text>'GNS.Hotkey'</text>
 		</line>
-		<line linenr="012" indent="">
+		<line linenr="022" indent="">
 			<text>if</text>
 			<text> </text>
 			<text>not</text>
 			<text> </text>
 			<var>$Hotkey</var>
 		</line>
-		<line linenr="013" indent="&#160;">
+		<line linenr="023" indent="&#160;">
 			<var>$HotkeyName</var>
 			<text> </text>
 			<text>=</text>
@@ -148,7 +178,7 @@
 			<text>=</text>
 			<var>3</var>
 		</line>
-		<line linenr="014" indent="&#160;">
+		<line linenr="024" indent="&#160;">
 			<var>$Hotkey</var>
 			<text> </text>
 			<text>=</text>
@@ -165,9 +195,9 @@
 			<text> </text>
 			<text>script</text>
 			<text> </text>
-			<call>Menu.GNS.Show.Newspaper</call>
+			<call>Menu.GNS.Open.NewsConsole</call>
 		</line>
-		<line linenr="015" indent="&#160;">
+		<line linenr="025" indent="&#160;">
 			<text>set</text>
 			<text> </text>
 			<text>global</text>
@@ -183,14 +213,14 @@
 			<text>=</text>
 			<var>$Hotkey</var>
 		</line>
-		<line linenr="016" indent="">
+		<line linenr="026" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="017" indent="" />
-		<line linenr="018" indent="">
+		<line linenr="027" indent="" />
+		<line linenr="028" indent="">
 			<comment>* reset Menu Active mutex flag</comment>
 		</line>
-		<line linenr="019" indent="">
+		<line linenr="029" indent="">
 			<text>set</text>
 			<text> </text>
 			<text>global</text>
@@ -206,11 +236,11 @@
 			<text>=</text>
 			<var>[FALSE]</var>
 		</line>
-		<line linenr="020" indent="" />
-		<line linenr="021" indent="">
+		<line linenr="030" indent="" />
+		<line linenr="031" indent="">
 			<comment>* load articles from t-files</comment>
 		</line>
-		<line linenr="022" indent="" interruptable="@">
+		<line linenr="032" indent="" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -220,12 +250,12 @@
 			<text> </text>
 			<text>script</text>
 			<text> </text>
-			<call>plugin.GNS.Setup.Newspapers</call>
+			<call>plugin.GNS.Setup.Channels</call>
 			<text> </text>
 			<text>:</text>
 		</line>
-		<line linenr="023" indent="" />
-		<line linenr="024" indent="">
+		<line linenr="033" indent="" />
+		<line linenr="034" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
@@ -236,7 +266,7 @@
 			<sval type="string" val="setup.plugin.GalacticNewsService" />
 			<sval type="int" val="50" />
 			<sval type="string" val="Setup the Galactic News Service plugin" />
-			<sval type="int" val="121" />
+			<sval type="int" val="128" />
 			<sval type="int" val="0" />
 			<sval type="array" size="4">
 				<sval type="string" val="PageID.Array" />
@@ -319,7 +349,7 @@
 					<sval type="int" val="2" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="3" />
-					<sval type="string" val="Menu.GNS.Show.Newspaper" />
+					<sval type="string" val="Menu.GNS.Open.NewsConsole" />
 				</sval>
 				<sval type="array" size="5">
 					<sval type="int" val="157" />
@@ -337,7 +367,7 @@
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="102" />
-					<sval type="string" val="plugin.GNS.Setup.Newspapers" />
+					<sval type="string" val="plugin.GNS.Setup.Channels" />
 					<sval type="int" val="-2147483647" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
@@ -350,7 +380,57 @@
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
-			<sval type="array" size="10">
+			<sval type="array" size="20">
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="************************************************" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="SCRIPT NAME: setup.plugin.GalacticNewsService.xml" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="DESCRIPTION: Configures the plugin on game load. The master PageID.Array" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="  is loaded and initialized if not already configured. PageID.Array" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="  stores the Text Pages of all static newsfeeds to be used by the " />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="  general news service. By default, GNS itself provides a single newsfeed" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="  as well as its initial settings in PageID 9500." />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="************************************************" />
+				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="0" />
 					<sval type="int" val="2" />
